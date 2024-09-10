@@ -1,7 +1,15 @@
 #!/usr/bin/python3
-"""Defines an object attribute lookup function."""
+"""
+contains the MyList class
+"""
 
 
-def lookup(obj):
-    """Return a list of an object's available attributes."""
-    return (dir(obj))
+class MyList(list):
+    """a subclass of list"""
+    def __init__(self):
+        """initializes the object"""
+        super().__init__()
+
+    def print_sorted(self):
+        """prints the sorted list"""
+        print(sorted(self))
